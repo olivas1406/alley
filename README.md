@@ -10,7 +10,7 @@ Meet Me In The Alley
 ---
 <br>
 
-![Meet Me In The Alley Screen Cap](./alley.png)
+![Meet Me In The Alley Screen Cap](./alley2.png)
 <br><br>
 <hr>
 This Project was developed and is maintained by the Brogrammers Team
