@@ -3,13 +3,21 @@ const express = require("express");
 const model = require("../models/alley.js");
 const router = express.Router();
 
-router.get("/", function(req, res) {                            
-    model.selectAll(function(data) { 
-            res.render("auth.handlebars")                     
-    });
- });
+// router.get("/", function(req, res) {                            
+//     model.selectAll(function(data) { 
+//             res.render("auth.handlebars")               // FOR AUTH PAGE - DLO   
+//     });
+//  });
 
-router.get("/home", function(req, res) {                            
+// router.get("/home", function(req, res) {                            
+//     model.selectAll(function(data) { 
+//         res.render("index.handlebars", {                 // FOR AUTH PAGE - DLO
+//             items: data 
+//         });                      
+//     });
+//  });
+
+router.get("/", function(req, res) {                            
     model.selectAll(function(data) { 
         res.render("index.handlebars", {
             items: data 
