@@ -1,35 +1,4 @@
 
-    {{!-- <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8">
-            
-        <form class="formLabel">
-            <label class="addTitle">Add an Item to Sell</label>
-            <br>
-            <p class="formText">Title</p>
-            <input type="text" name="title" size="27" class="input input1" required="required">
-            <br><br>
-            <p class="formText">Description of Item</p>
-            <textarea rows="6" cols="30" name="description" class="input" form="usrform" required="required">
-            </textarea>
-            <br>
-            <p class="formText">Price</p>
-            <input type="text" name="price" size="7" class="input input3" required="required">
-            <br>
-            <p class="input formText">Category</p>   
-                <select class=" input category" required="required">
-                    <option value></option>
-                    <option value="1" style="font-size:20px;">Smartphone</option>
-                    <option value="2" style="font-size:20px;">Gaming Console</option>
-                    <option value="3" style="font-size:20px;">Laptop</option>
-                    <option value="4" style="font-size:20px;">Desktop</option>
-                    <option value="5" style="font-size:20px;">Trent</option>
-                    <option value="6" style="font-size:20px;">Other</option>
-                </select>
-            <br>
-            <p class="formText">Image</p> --}}
-
-
     <div class="row">
         <div class="col-12 sellTitle">
             Sell Your Shizz
@@ -47,7 +16,7 @@
             </textarea>
             <br>
             <p>Price</p>
-            <input type="text" name="price" size="7" class="input" required="required">
+            <input type="text" name="category" size="7" class="input" required="required">
             <br>
             <p>Category</p>   
                 <select class="category" required="required">
@@ -72,7 +41,11 @@
             <a href="/home">
             <button type="button" class="btn btn-primary">Cancel</button>
             </a>
+            <a href="/sell/">
             <button type="button" type="submit" class="btn btn-secondary" style="margin-right:2%;">Submit</button>
+            {{!-- <button type="button" action="/updateOne" method="POST class="btn btn-secondary" style="margin-right:2%;">Submit</button> --}}
+
+            </a>
             </div>
             <div class="col-2"></div>
     </div>

@@ -10,6 +10,12 @@ var prods = {
         orm.selectOne(prodNum, function(res) {
             callback(res);
         });
+    },
+    updateOne: function(title, desc, cat, price, callback) {
+        orm.updateOne(title, desc, cat, price, function(res) {
+            console.log("res alleyJS: ", res);
+            callback(res);
+        })
     }
 };
 
