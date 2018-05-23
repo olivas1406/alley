@@ -9,7 +9,7 @@ var orm = {
         });
     },
     selectOne: function(prodNum, callback) {
-        var queryString = "SELECT * FROM PRODUCTS WHERE Product_Id=" + prodNum + ";";
+        var queryString = "SELECT * FROM products WHERE Product_Id=" + prodNum + ";";
         console.log(queryString);
         connection.query(queryString, [prodNum], function(err, result) {
             if (err) throw err;
