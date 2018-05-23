@@ -28,7 +28,7 @@ Create table Seller (
  Primary Key (Seller_ID)
 ) ENGINE = MyISAM;
 
-Create table Products (
+Create table products (
 	Product_Id Int NOT NULL AUTO_INCREMENT,
 	Product_Name Varchar(80) NOT NULL,
 	Category Char(40) NOT NULL CHECK (Category IN ('laptop', 'desktop', 'smartphone', 'smartpad', 'gaming computer', 'gaming console', 'speakers', 'home theater', 
