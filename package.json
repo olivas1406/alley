@@ -4,8 +4,8 @@
   "description": "package.json for Project 2",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-  }
+    "start": "node server.js"
+  },
   "keywords": [
     "Project",
     "2",
