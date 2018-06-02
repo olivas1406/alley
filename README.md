@@ -17,7 +17,7 @@ Meet Me In The Alley
 ![Meet Me In The Alley Screen Cap](./alley2.png)
 <br><br>
 <hr>
-This Project was developed and is maintained by the Brogrammers Team, to get help contact
+This Project was developed and is maintained by the Brogrammers Team, to get help contact:<br>
 
 - Daniel Olivas (me@danielolivas.net, danielolivas.net)
 - Erick Bsilvall (github: bsilvall)
