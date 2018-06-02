@@ -8,6 +8,10 @@ Meet Me In The Alley
 ### Meet Me In The Alley is a full stack website built with HTML, CSS, SASS, jQuery, NodeJS, ExpressJS, HandlebarsJS, & MySQL.  Users are able to buy and sell items using our intuitive online marketplace.
 
 ---
+[CLICK ME to see it in action](https://ancient-retreat-52295.herokuapp.com/)
+<br><br>
+
+---
 <br>
 
 ![Meet Me In The Alley Screen Cap](./alley2.png)
