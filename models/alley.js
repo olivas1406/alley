@@ -12,8 +12,11 @@ var prods = {
         });
     },
     updateOne: function(title, desc, cat, price, callback) {
+        console.log("alleyJS before updateOne: ", title, desc, cat, price);
         orm.updateOne(title, desc, cat, price, function(res) {
+
             console.log("res alleyJS: ", res);
+            console.log("alleyJS after updateOne: ", title, desc, cat, price);
             callback(res);
         })
     }

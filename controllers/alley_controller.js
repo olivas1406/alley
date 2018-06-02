@@ -38,21 +38,38 @@ router.get("/sell", (req, res) => {
     res.render("sell.handlebars");
 });
 
-router.post("/sell/updateOne", function(req, res) {
-    var title = req.params.title;
+// router.post("/sell/updateOne", function(req, res) {
+//     var title = req.params.title;
+//     console.log("title @ alleyController ", title);
+//     var desc = req.params.description;
+//     console.log("description @ alleyController ", desc);
+//     var cat = req.params.category;
+//     console.log("category @ alleyContoller", cat);
+//     var price = req.params.price;
+//     console.log("price @ alleyContoller", price);
+//     model.updateOne(title, desc, cat, price, function() {
+//         alert("Item Added");
+//         res.redirect("/home");
+//     })
+// });
+
+router.post("/sellItem/:title:desc:cat:price", function(req, res) {
+    var title = req.body.title;
     console.log("title @ alleyController ", title);
-    var desc = req.params.description;
+    var desc = req.body.description;
     console.log("description @ alleyController ", desc);
-    var cat = req.params.category;
+    var cat = req.body.category;
     console.log("category @ alleyContoller", cat);
-    var price = req.params.price;
+    var price = req.body.price;
     console.log("price @ alleyContoller", price);
     model.updateOne(title, desc, cat, price, function() {
-        alert("Item Added");
-        res.redirect("/home");
+        // alert("Item Added");
+        // res.redirect("/home");
+        res.redirect("/");
     })
-
 });
+
+
 router.get("*", (req, res) => {
     res.render("404.handlebars");
 });
